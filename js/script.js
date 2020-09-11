@@ -13,10 +13,37 @@ var app = app || {};
 			// Add the error messages if the email
 			// or password is not valid
 			$('form').submit(function(event) {
+				event.preventDefault();
 
-				// To complete
 
+				var email = $("#email").val(); // save email input
+				var password = $("#password").val(); // save password input
 
+				const validatedEmail = function(email) {
+					if (!app.form.validateEmail(email)) { // validate email address
+						$('#email-error-message').text(errorEmail);
+						return false // error message 
+					} else {
+						$('#email-error-message').text();
+						return true
+					}
+				}
+
+				const validatedPassword = function(password) {
+					if (!app.form.validatePassword(password)) { // validate password
+						$('#password-error-message').text(errorPassword); // error message 
+					} else {
+						$('#password-error-message').text();
+						return true
+					}
+				}
+
+				if (validatedEmail(email) && validatedPassword(password)) {
+					return true
+				} else {
+					return false
+				}
+				
 			});
 		},
 		/**
@@ -35,7 +62,7 @@ var app = app || {};
 		 * 
 		 * @param {String} password Password value as a String
 		 * 
-		 * @return {Boolean} If password is valid return true otheriwse false
+		 * @return {Boolean} If password is valid return true otherwise false
 		 */
 		validatePassword: function(password) {
 			// The password's first character must be a letter, it must contain at least 4 characters and no more than 15 characters and no characters other than letters, numbers and the underscore may be used
@@ -47,4 +74,16 @@ var app = app || {};
 	$(document).ready(app.form.init);
 
 }(jQuery);
+
+// var email = $("#email").val();
+// var password = $("#password").val();
+
+			// $('#email').keyup(function() { // on keyup
+			// 	var value = $(this).val(); // retrieve the value of the input
+
+			// 	if (this.validateEmail(value)) // if the value is false
+			// 		$('#sign-in').prop('disabled', true); // disable the button
+			// 	else // if not
+			// 		$('#sign-in').prop('disabled', false); // enable it
+			// });
 
