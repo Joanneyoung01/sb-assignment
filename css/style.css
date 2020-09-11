@@ -91,3 +91,16 @@ input {
 }
 
 /* To complete */
+.login {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.heading {
+  text-transform: uppercase;
+}
+
+#form input{
+  display: block;
+  width: 80%;
+}

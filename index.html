@@ -20,17 +20,17 @@
 	<meta name="robots"			content="index, follow" />
 	<meta name="viewport"		content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet"		type="text/css" href="css/style.css" />
-
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 	<script src="js/script.js" type="text/javascript"></script>
 
 	<title>SB Assignment</title>
 </head>
 
-<body class="container" id="login">
+<body class="col-md-6 offset-md-3 row" id="login">
 
-	<div class="container">
+	<div class="container card col divider">
 
 		<div class="heading">	
 			<h2>I have a login</h2>
@@ -45,19 +45,19 @@
 			<label for="password"><b>Password</b></label>
 			<span id="password-error-message"></span>
 			<input type="password" id="password" name="password" required>
-	
-			<label for="remember-me"><b>Stay signed in</b></label>
+			
 			<input type="checkbox" name="remember-me">
-			<input type="submit" name="sign-in" id="sign-in" value="Sign in">
+			<label for="remember-me"><b>Stay signed in</b></label>
+			<input class="btn btn-primary" type="submit" name="sign-in" id="sign-in" value="Sign in">
 		</form>
 	</div>
 
-	<div class="container">
+	<div class="container card col">
 		<div class="heading">	
 			<h2>Creating an account</h2>
 		</div>
 		<p>Creating an account is quick and simple and allows you to track, change or return your order</p>
-		<button>Create and account</button>
+		<button class="btn btn-primary">Create and account</button>
 	</div>
 
 	

@@ -36,7 +36,7 @@ var app = app || {};
 					}
 				}
 
-				if (validatedEmail(email) && validatedPassword(password)) { // if validated email and validated pass
+				if (validatedEmail(email) && validatedPassword(password)) { // if validated email and password
 					console.log("user has been validated")
 					return true
 				} else {
