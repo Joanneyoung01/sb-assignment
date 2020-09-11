@@ -28,7 +28,7 @@
 	<title>SB Assignment</title>
 </head>
 
-<body class="col-md-8 offset-md-2 row global-container" id="login">
+<body class="col-md-8 offset-md-2 col-sm-12 row global-container" id="login">
 
 	<div class="container card col-sm">
 
@@ -41,18 +41,18 @@
 			<div>
 				<label for="email"><b>Email*</b></label>
 				<span id="email-error-message" class="error"></span>
-				<input class="form-control" type="text" id="email" name="email" required>
+				<input class="form-control rounded-0" type="text" id="email" name="email" required>
 			</div>
 	
 			<div>
 				<label for="password"><b>Password*</b></label>
 				<span id="password-error-message" class="error"></span>
-				<input class="form-control" type="password" id="password" name="password" required>
+				<input class="form-control rounded-0" type="password" id="password" name="password" required>
 			</div>
 			
-			<div class="row">
-				<input class="col-1" type="checkbox" name="remember-me">
-				<label class="col-9" for="remember-me"><b>Stay signed in</b></label>
+			<div>
+				<input type="checkbox" name="remember-me">
+				<label for="remember-me"><b>Stay signed in</b></label>
 			</div>
 			<input class="login-btn btn btn-primary" type="submit" name="sign-in" id="sign-in" value="Sign in">
 		</form>
