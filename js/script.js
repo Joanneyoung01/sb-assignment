@@ -37,6 +37,15 @@ var app = app || {};
 						return true
 					}
 				}
+
+
+				if (validatedEmail(email) && validatedPassword(password)) {
+					console.log("user has been validated")
+					return true
+				} else {
+					console.log("user has not been validated")
+					return false
+				}
 				
 			});
 		},
