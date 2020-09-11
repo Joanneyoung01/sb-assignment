@@ -28,36 +28,42 @@
 	<title>SB Assignment</title>
 </head>
 
-<body class="col-md-6 offset-md-3 row" id="login">
+<body class="col-md-8 offset-md-2 row" id="login">
 
-	<div class="container card col divider">
+	<div class="container card col-sm">
 
 		<div class="heading">	
 			<h2>I have a login</h2>
+			<hr>
 		</div>
 
 		<form class="form" id="form">
 			<label for="email"><b>Username</b></label>
-			<span id="email-error-message"></span>
-			<input type="text" id="email" name="email" required>
+			<span id="email-error-message" class="error"></span>
+			<input class="form-control" type="text" id="email" name="email" required>
 	
 			
 			<label for="password"><b>Password</b></label>
-			<span id="password-error-message"></span>
-			<input type="password" id="password" name="password" required>
+			<span id="password-error-message" class="error"></span>
+			<input class="form-control" type="password" id="password" name="password" required>
 			
 			<input type="checkbox" name="remember-me">
 			<label for="remember-me"><b>Stay signed in</b></label>
-			<input class="btn btn-primary" type="submit" name="sign-in" id="sign-in" value="Sign in">
+			<input class="login-btn btn btn-primary" type="submit" name="sign-in" id="sign-in" value="Sign in">
 		</form>
 	</div>
 
-	<div class="container card col">
+	<div class="container card col-sm">
 		<div class="heading">	
 			<h2>Creating an account</h2>
+			<hr>
 		</div>
-		<p>Creating an account is quick and simple and allows you to track, change or return your order</p>
-		<button class="btn btn-primary">Create and account</button>
+		<p>
+			<b>
+				Creating an account is quick and simple and allows you to track, change or return your order
+		</b>
+	</p>
+		<button class="login-btn btn btn-primary">Create and account</button>
 	</div>
 
 	

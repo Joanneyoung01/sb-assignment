@@ -38,6 +38,7 @@ var app = app || {};
 
 				if (validatedEmail(email) && validatedPassword(password)) { // if validated email and password
 					console.log("user has been validated")
+					alert("User signed in")
 					return true
 				} else {
 					console.log("user has not been validated")
