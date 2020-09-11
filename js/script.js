@@ -37,12 +37,6 @@ var app = app || {};
 						return true
 					}
 				}
-
-				if (validatedEmail(email) && validatedPassword(password)) {
-					return true
-				} else {
-					return false
-				}
 				
 			});
 		},
