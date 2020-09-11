@@ -14,8 +14,6 @@ var app = app || {};
 			// or password is not valid
 			$('form').submit(function(event) {
 				event.preventDefault();
-
-
 				var email = $("#email").val(); // save email input
 				var password = $("#password").val(); // save password input
 
@@ -38,8 +36,7 @@ var app = app || {};
 					}
 				}
 
-
-				if (validatedEmail(email) && validatedPassword(password)) {
+				if (validatedEmail(email) && validatedPassword(password)) { // if validated email and validated pass
 					console.log("user has been validated")
 					return true
 				} else {
