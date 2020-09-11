@@ -75,16 +75,3 @@ var app = app || {};
 	$(document).ready(app.form.init);
 
 }(jQuery);
-
-// var email = $("#email").val();
-// var password = $("#password").val();
-
-			// $('#email').keyup(function() { // on keyup
-			// 	var value = $(this).val(); // retrieve the value of the input
-
-			// 	if (this.validateEmail(value)) // if the value is false
-			// 		$('#sign-in').prop('disabled', true); // disable the button
-			// 	else // if not
-			// 		$('#sign-in').prop('disabled', false); // enable it
-			// });
-

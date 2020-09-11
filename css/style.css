@@ -122,8 +122,22 @@ p, label {
   font-size: 1.5em;
 }
 
+label {
+  margin: 10px 0 10px 0;
+}
+
 /* .login-btn {
   position: absolute;
   right:    0;
   bottom:   0;
 } */
+
+#form input.btn {
+  width: 50%;
+}
+
+.btn {
+  width: 50%;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}

@@ -38,17 +38,22 @@
 		</div>
 
 		<form class="form" id="form">
-			<label for="email"><b>Username</b></label>
-			<span id="email-error-message" class="error"></span>
-			<input class="form-control" type="text" id="email" name="email" required>
+			<div>
+				<label for="email"><b>Email*</b></label>
+				<span id="email-error-message" class="error"></span>
+				<input class="form-control" type="text" id="email" name="email" required>
+			</div>
 	
+			<div>
+				<label for="password"><b>Password*</b></label>
+				<span id="password-error-message" class="error"></span>
+				<input class="form-control" type="password" id="password" name="password" required>
+			</div>
 			
-			<label for="password"><b>Password</b></label>
-			<span id="password-error-message" class="error"></span>
-			<input class="form-control" type="password" id="password" name="password" required>
-			
-			<input type="checkbox" name="remember-me">
-			<label for="remember-me"><b>Stay signed in</b></label>
+			<div class="row">
+				<input class="col-1" type="checkbox" name="remember-me">
+				<label class="col-9" for="remember-me"><b>Stay signed in</b></label>
+			</div>
 			<input class="login-btn btn btn-primary" type="submit" name="sign-in" id="sign-in" value="Sign in">
 		</form>
 	</div>
@@ -63,7 +68,7 @@
 				Creating an account is quick and simple and allows you to track, change or return your order
 		</b>
 	</p>
-		<button class="login-btn btn btn-primary">Create and account</button>
+		<button class="login-btn btn btn-primary">Create an account</button>
 	</div>
 
 	
