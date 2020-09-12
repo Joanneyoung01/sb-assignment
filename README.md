@@ -1,4 +1,7 @@
 SB Assignment
+
+![Devices](devices.png)
+
 ==============
 
 **Instructions:**

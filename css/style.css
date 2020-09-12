@@ -157,6 +157,10 @@ label {
   margin-bottom: 30px;
 }
 
-@media all and (max-width:480px) {
+@media all and (max-width:600px) {
   .btn { width: 85%; }
+} 
+
+@media all and (max-width:480px) {
+  .global-container { min-width: 400px; }
 } 
