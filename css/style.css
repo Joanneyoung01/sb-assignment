@@ -114,23 +114,18 @@ html,body {
   flex-wrap: wrap;
 }
 
+.card {
+  margin: 1em;
+  padding: 2em;
+  height: 40%;
+}
+
 .error {
   color: red;
 }
 
 .heading {
   text-transform: uppercase;
-}
-
-input[type="text"] {
-  display: block;
-  width: 100%;
-}
-
-.card {
-  margin: 1em;
-  padding: 2em;
-  height: 40%;
 }
 
 p, label {
@@ -152,12 +147,19 @@ label {
   margin: 2em;
 }
 
+input[type="text"] {
+  display: block;
+  width: 100%;
+}
+
 .checkbox {
   font-weight: normal;
   margin-bottom: 30px;
 }
 
-@media all and (max-width:600px) {
+/*add custom media queries for devices*/
+
+@media all and (max-width:1180px) {
   .btn { width: 85%; }
 } 
 

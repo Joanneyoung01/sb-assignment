@@ -22,7 +22,7 @@ var app = app || {};
 						$('#email-error-message').text(errorEmail);
 						return false // error message 
 					} else {
-						$('#email-error-message').text();
+						$('#email-error-message').text(); // empty error message
 						return true
 					}
 				}
@@ -31,7 +31,7 @@ var app = app || {};
 					if (!app.form.validatePassword(password)) { // validate password
 						$('#password-error-message').text(errorPassword); // error message 
 					} else {
-						$('#password-error-message').text();
+						$('#password-error-message').text(); // empty error message
 						return true
 					}
 				}
@@ -39,10 +39,10 @@ var app = app || {};
 				if (validatedEmail(email) && validatedPassword(password)) { // if validated email and password
 					console.log("user has been validated")
 					alert("User signed in")
-					return true
+					return true // user can sign in
 				} else {
 					console.log("user has not been validated")
-					return false
+					return false // user cannot sign in
 				}
 				
 			});
