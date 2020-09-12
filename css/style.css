@@ -147,6 +147,15 @@ label {
   margin: 2em;
 }
 
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #0099ff !important;
+    border-color: #0099ff !important;
+}
+
 input[type="text"] {
   display: block;
   width: 100%;
