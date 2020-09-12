@@ -142,16 +142,6 @@ label {
   font-weight: bold;
 }
 
-/* .login-btn {
-  position: absolute;
-  right:    0;
-  bottom:   0;
-} */
-
-#form input.btn {
-  width: 50%;
-}
-
 .btn {
   width: 50%;
   text-transform: uppercase;
@@ -167,3 +157,6 @@ label {
   margin-bottom: 30px;
 }
 
+@media all and (max-width:480px) {
+  .btn { width: 85%; }
+} 
