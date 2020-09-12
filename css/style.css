@@ -147,6 +147,8 @@ label {
   margin: 2em;
 }
 
+/*override bootstraps button colours using specificity*/
+
 .btn-primary,
 .btn-primary:hover,
 .btn-primary:active,
