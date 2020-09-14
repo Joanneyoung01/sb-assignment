@@ -1,7 +1,7 @@
 ## My approach:
 
 ## HTML
-For this I used one global container to hold all the pages content, then divided this up into two div `cards`. The first is a login html form and the second div is a create account div. 
+For this I used one global container to hold all the pages content, then divided this up into two div `cards`. The first is a login html form and the second div is a create account div. For mobile devices the divs will stack.
 
 ## Javascript
 For the logic, I have completed the `validatePassword` function first using regEx to test the password.
@@ -13,8 +13,7 @@ Next, on the event loop is to validate if `validatedEmail` AND `validatedPasswor
 ## css
 I have used Bootstrap css style sheet and customized styles using CSS. Using bootstraps grid layout and media queries for mobile responsive design.
 
-
-SB Assignment
+## Device visuals
 
 ![Devices](devices.png)
 
