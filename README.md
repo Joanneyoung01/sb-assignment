@@ -1,3 +1,20 @@
+My approach:
+
+
+**HTML**
+For this I used one global container to hold all the pages content, then divided this up into two div `cards`. The first is a login html form and the second div is a create account div. 
+
+**Javascript**
+For the logic, I have completed the `validatePassword` function first using regEx to test the password.
+
+Then I completed the `init` function. First saving the values into variables via jQuery. Next on the event loop is to validate both email and password next and saving both outputs as `validatedEmail` and `validatedPassword`. If the output is false (i.e not validated) an error message will appear next to the input field.
+
+Next, on the event loop is to validate if `validatedEmail` AND `validatedPassword`. If both of conditions are true - this allows a user to login.
+
+**css**
+I have used Bootstrap css style sheet and customized styles using CSS. Using bootstraps grid layout and media queries for mobile responsive design.
+
+
 SB Assignment
 
 ![Devices](devices.png)
