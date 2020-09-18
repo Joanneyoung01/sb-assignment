@@ -14,6 +14,7 @@ var app = app || {};
 			// or password is not valid
 			$('form').submit(function(event) {
 				event.preventDefault();
+				
 				var email = $("#email").val(); // save email input
 				var password = $("#password").val(); // save password input
 
