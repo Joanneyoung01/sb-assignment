@@ -5,7 +5,7 @@
 For this I used one global container to hold all the pages content, then divided this up into two div `cards`. The first is a login html form and the second div is a create account div. For mobile devices the divs will stack.
 
 ## Javascript
-For the logic, I have completed the `validatePassword` function first using regEx to test the password.
+For the logic, I have completed the `validatePassword` function first using regEx to test the password. 
 
 Then I completed the `init` function. First saving the values into variables via jQuery. Next on the event loop is to validate both email and password next and saving both outputs as `validatedEmail` and `validatedPassword`. If the output is false (i.e not validated) an error message will appear next to the input field.
 
